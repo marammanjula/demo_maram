@@ -1,0 +1,6 @@
+-hosts: current
+ gather_facts: yes
+ tasks:
+ -name: get hostname value from hostname command 
+  command: hostname
+  register: playbook_hostname
