@@ -1,6 +1,11 @@
--hosts: current
- gather_facts: yes
- tasks:
- -name: get hostname value from hostname command 
-  command: hostname
-  register: playbook_hostname
+---
+#- hosts: localcs
+  #gather_facts: yes
+  #tasks:
+  #- name: Creates directory
+    #file: path=/home/manjula/Desktop/centos state=directory owner=manjula group=manjula mode=0775
+- hosts: local
+  tasks:
+  - name: Create directory
+    file: path=/home/manjula/Desktop/ubuntu state=directory owner=manjula group=manjula mode=0775
+~                                                                                                   
