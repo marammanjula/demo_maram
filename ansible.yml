@@ -1,5 +1,5 @@
 ---
-#- hosts: localcs
+#- hosts: localcos
   #gather_facts: yes
   #tasks:
   #- name: Creates directory
